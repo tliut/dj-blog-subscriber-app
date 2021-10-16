@@ -1,0 +1,15 @@
+asgiref==3.4.1
+blinker==1.4
+boto3==1.18.63
+botocore==1.21.63
+Django==3.2.8
+django-crispy-forms==1.13.0
+dynamorm==0.11.0
+jmespath==0.10.0
+marshmallow==3.13.0
+python-dateutil==2.8.2
+pytz==2021.3
+s3transfer==0.5.0
+six==1.16.0
+sqlparse==0.4.2
+urllib3==1.26.7

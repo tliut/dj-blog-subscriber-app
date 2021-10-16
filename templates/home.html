@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="mb-3">Welcome to Clouds<b>R</b>Us</h1>
+    <hr>
+    <h4>Here are some Cloud Adoption Statistics</h4>
+    
+    <ul>
+        <li>The <b>public cloud computing market</b> will be worth <b>$800 billion by 2025</b></li>
+        <li>By 2024, <b>enterprise cloud spending</b> will make up <b>14% of IT revenue</b> globally.</li>
+        <li><b>Platform as a Service</b> (PaaS) will grow by <b>26.6% in 2021.</b></li>
+        <li><b>70% of companies</b> using the cloud plan to <b>increase their budgets</b> in the future.</li>
+        <li><b>61% of businesses</b> migrated their <b>workloads to the cloud</b> in 2020.</li>
+        <li><b>Amazon Web Services</b> (AWS) had a <b>76% share</b> of the enterprise cloud adoption in 2020.</li>
+    </ul>
+    <small class="text-muted">
+        (source: <a href="https://techjury.net/blog/how-many-companies-use-cloud-computing/#gref" class="ml-r">techjury</a>)
+    </small>
+    <br>
+    <br>
+    <p>At Clouds<b>R</b>Us we make it easy for you to keep up with the latest blogs and news related to <b>AWS</b> Cloud. Simply sign up for our AwsBlogRus subscription and we will take care of the rest. </p>
+    
+    <p>Your subscription will include:</p>
+    <ul>
+        <li>Blogs from one over 37 AWS Blog Categories [Analytics, Architecture, Big Data, ... more]</li>
+        <li>Automated Blog delivery in your inbox - daily at 8:00 a.m CST</li>
+    </ul>
+    <br>
+    
+    Interested? <a href="{% url 'subscribe' %}">subscribe</a>
+{% endblock content %}
+
+
+
+
+
+
