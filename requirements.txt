@@ -4,6 +4,7 @@ boto3==1.18.63
 botocore==1.21.63
 Django==3.2.8
 django-crispy-forms==1.13.0
+django-decouple==2.1
 dynamorm==0.11.0
 jmespath==0.10.0
 marshmallow==3.13.0
