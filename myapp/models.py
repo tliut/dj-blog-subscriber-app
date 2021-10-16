@@ -6,7 +6,8 @@ from django.conf import settings
 class SubscribersTable(DynaModel):
 	class Table:
 		resource_kwargs = {
-			'endpoint_url': settings.DB_ENDPOINT
+			'endpoint_url': settings.DB_ENDPOINT,
+            'region_name' : 'us-east-2'
 		}
 		name = settings.DB_TABLE
 		hash_key = 'created_on'

@@ -1,11 +1,12 @@
 import boto3
-from myproject.settings import DB_ENDPOINT, DB_TABLE
+from myproject.settings import DB_ENDPOINT, DB_TABLE, DEBUG
 
 
 def create_table(dynamodb=None):
     if not dynamodb:
-        dynamodb = boto3.resource('dynamodb', endpoint_url=DB_ENDPOINT)
-
+        if DEBUG:
+            dynamodb = boto3.resource('dynamodb', endpoint_url=DB_ENDPOINT)
+        dynamodb = boto3.resource('dynamodb', region_name='us-east-2')
     table = dynamodb.create_table(
         TableName=DB_TABLE,
         KeySchema=[
